@@ -1,25 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home Page</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    />
   </head>
   <body>
-    <div id="header">
-      <h2>Ryan Wiggins</h2>
-      <h4>Portfolio</h4>
-      <h4>Contact</h4>
-    </div>
+    <nav
+      class="navbar is-primary"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="./index.html">
+          <img src="./images/RYANS LOGO-01.png" alt="Logo" />
+        </a>
 
-    <h3>Fullstack Developer</h3>
-    <p>Web developer living in Brooklyn, NY. From Cleveland, OH.</p>
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
-    <h3>Skills</h3>
-    <p>
-      HTML, CSS, Bootstrap, Javascript, React, Vue, Node, Express, MongoDB,
-      MySQL, Git, GitHub
-    </p>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item is-tab is-black">
+            Home
+          </a>
+
+          <a class="navbar-item is-tab">
+            Portfolio
+          </a>
+
+          <a class="navbar-item is-tab">
+            Contact
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">
+          Hello World
+        </h1>
+        <p class="subtitle">My first website with <strong>Bulma</strong>!</p>
+      </div>
+    </section>
+    <script src="./script.js"></script>
   </body>
 </html>
